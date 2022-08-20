@@ -4,9 +4,13 @@
 bool checkValueInRange(float parameterValue, float maxLimit, float minLimit)
 {
   if((parameterValue < maxLimit) && (parameterValue > minLimit))
+  {
     return true;
+  }
   else
+  {
     return false;
+  }
 }
 
 bool isBatteryStatusOk(float temperature, float SOC, float chargeRate)
@@ -23,9 +27,13 @@ bool isBatteryStatusOk(float temperature, float SOC, float chargeRate)
   bool chargerRateCheck = checkValueInRange(chargeRate,MAX_CHARGERATE,MIN_CHARGERATE);
 
   if(temperatureCheck && SOCCheck && chargerRateCheck)
+  {
     return true;
+  }
   else
+  {
     return false;
+  }
 }
 
 int main() 
@@ -34,5 +42,5 @@ int main()
   assert(isBatteryStatusOk(50, 85, 0) == false);
   assert(isBatteryStatusOk(20, 50, 0.2) == true);
   assert(isBatteryStatusOk(45, 80, 0.8) == false);
-  return 1;
+  return 0;
 }
