@@ -26,14 +26,7 @@ bool isBatteryStatusOk(float temperature, float SOC, float chargeRate)
   bool SOCCheck = checkValueInRange(SOC,MAX_SOC,MIN_SOC);
   bool chargerRateCheck = checkValueInRange(chargeRate,MAX_CHARGERATE,MIN_CHARGERATE);
 
-  if(temperatureCheck && SOCCheck && chargerRateCheck)
-  {
-    return true;
-  }
-  else
-  {
-    return false;
-  }
+  return(temperatureCheck && SOCCheck && chargerRateCheck);
 }
 
 int main() 
