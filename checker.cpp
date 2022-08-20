@@ -1,6 +1,6 @@
 #include <assert.h>
 #include <iostream>
-#include "batteryStatusChecker.cpp"
+#include "batteryStatusChecker.hpp"
 using namespace std;
 
 int main() 
