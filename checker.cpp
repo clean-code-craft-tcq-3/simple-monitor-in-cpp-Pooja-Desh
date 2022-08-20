@@ -1,7 +1,5 @@
 #include <assert.h>
-#include <iostream>
 #include "batteryStatusChecker.hpp"
-using namespace std;
 
 int main() 
 {
