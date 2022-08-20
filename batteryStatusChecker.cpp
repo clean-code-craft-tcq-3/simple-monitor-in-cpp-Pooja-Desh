@@ -1,5 +1,7 @@
 #include <assert.h>
 #include <iostream>
+#include "batteryStatusChecker.hpp"
+
 using namespace std;
 
 float MAX_TEMPERATURE = 45.0;
