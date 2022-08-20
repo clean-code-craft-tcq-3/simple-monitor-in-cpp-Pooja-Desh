@@ -2,12 +2,12 @@
 #include <iostream>
 using namespace std;
 
-#define MAX_TEMPERATURE = 45.0;
-#define MIN_TEMPERATURE = 0.0;
-#define MAX_SOC = 80.0;
-#define MIN_SOC = 20.0;
-#define MAX_CHARGERATE = 0.8;
-#define MIN_CHARGERATE = 0.0;
+#define MAX_TEMPERATURE 45.0;
+#define MIN_TEMPERATURE 0.0;
+#define MAX_SOC 80.0;
+#define MIN_SOC 20.0;
+#define MAX_CHARGERATE 0.8;
+#define MIN_CHARGERATE 0.0;
 
 bool checkValueInRange(float parameterValue, float maxLimit, float minLimit)
 {
